@@ -50,6 +50,7 @@ void loop() {
   delay(1000);
   lcd.setCursor(0,0); lcd.print("Silahkan Masuk!");
   delay(1000);
+  lcd.clear();
   lcd.setCursor(0,0); lcd.print("PALANG DIBUKA");
   forward();
   bunyibuzzoke();
@@ -72,6 +73,7 @@ if(bacaIR==0 && kunci==1){
   lcd.clear();
   lcd.setCursor(0,0); lcd.print("PALANG DITUTUP");
   delay(500);
+  lcd.clear();
   backward();
   lcd.setCursor(0,0); lcd.print("TEMPELKAN KARTU!");
 }
